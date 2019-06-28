@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex5 mod1</title>
+</head>
+<body>
+    <script>
+        function habilidades(usuarios) {
+            for (usuario of usuarios) {
+                 console.log("O " + usuario.nome + " possui as habilidades: " +  usuario.habilidades.join(", ") );
+            }
+        }
+        
+        var usuarios = [
+            {
+                nome: "Gabriel",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Diego",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+      habil(usuarios);
+    </script>
+</body>
+</html>

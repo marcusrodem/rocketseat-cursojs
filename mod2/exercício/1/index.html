@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 1 do Módulo 2</title>
+</head>
+
+<body>
+    <button id="botao">clique no botão</button>
+
+    <div id="quadrado"></div>
+
+    <script>
+        var botE = document.getElementById("botao");
+        var quadE = document.getElementById("quadrado");
+        botE.onclick = function () {
+            var quadr = document.createElement("div");
+            quadr.style.width = '100px';
+            quadr.style.height = '100px';
+            quadr.style.backgroundColor = '#F00';
+            quadE.appendChild(quadr);
+        };
+    </script>
+
+</body>
+
+</html>
